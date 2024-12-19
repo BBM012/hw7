@@ -1,12 +1,12 @@
-import 'family.dart';
+import 'grandmother.dart';
 
-class Mother extends Family{
-  
-  Mother(super.name,super.color);
+class Mother extends Grandmother {
+  String address;
+
+  Mother(super.name,this.address);
 
   @override
-  int.sound(){
-    print('helloou');
-    return 2;
+  String toString() {
+    return 'Apa name: $name';
   }
-  }
+}
